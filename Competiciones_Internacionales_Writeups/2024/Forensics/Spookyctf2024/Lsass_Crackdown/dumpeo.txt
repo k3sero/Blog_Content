@@ -1,0 +1,324 @@
+pypykatz lsa minidump dump.DMP
+INFO:pypykatz:Parsing file dump.DMP
+FILE: ======== dump.DMP =======
+== LogonSession ==
+authentication_id 6471305 (62be89)
+session_id 2
+username Consortium
+domainname DESKTOP-UBFFHS2
+logon_server DESKTOP-UBFFHS2
+logon_time 2024-10-18T01:40:41.720992+00:00
+sid S-1-5-21-996221637-1914836208-3740248221-1011
+luid 6471305
+        == MSV ==
+                Username: Consortium
+                Domain: DESKTOP-UBFFHS2
+                LM: NA
+                NT: f6c479f4b9904f884fede1b2d4328d98
+                SHA1: 8e0cf85ff4c266ff4ef626580cce1ff025118c6f
+                DPAPI: 8e0cf85ff4c266ff4ef626580cce1ff025118c6f
+        == WDIGEST [62be89]==
+                username Consortium
+                domainname DESKTOP-UBFFHS2
+                password None
+                password (hex)
+        == Kerberos ==
+                Username: Consortium
+                Domain: DESKTOP-UBFFHS2
+        == WDIGEST [62be89]==
+                username Consortium
+                domainname DESKTOP-UBFFHS2
+                password None
+                password (hex)
+        == DPAPI [62be89]==
+                luid 6471305
+                key_guid cd06bac7-841e-4615-afdf-735caa9878b6
+                masterkey 9447b5b0b2e2ebbec0bd1298e3e411612413f39cfbb8a6019a0bd2e14be8e45d602fdd4f96d22f977161988f0d4b6090bf992bea9abb4dc64873bfedff8ed10f
+                sha1_masterkey 1256160a5105caf7146b49f397a95efee53e4376
+
+== LogonSession ==
+authentication_id 6406742 (61c256)
+session_id 2
+username DWM-2
+domainname Window Manager
+logon_server 
+logon_time 2024-10-18T01:39:42.884093+00:00
+sid S-1-5-90-0-2
+luid 6406742
+        == WDIGEST [61c256]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == WDIGEST [61c256]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 6405850 (61beda)
+session_id 2
+username DWM-2
+domainname Window Manager
+logon_server 
+logon_time 2024-10-18T01:39:42.884093+00:00
+sid S-1-5-90-0-2
+luid 6405850
+        == WDIGEST [61beda]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == WDIGEST [61beda]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 6401537 (61ae01)
+session_id 2
+username UMFD-2
+domainname Font Driver Host
+logon_server 
+logon_time 2024-10-18T01:39:42.842044+00:00
+sid S-1-5-96-0-2
+luid 6401537
+        == WDIGEST [61ae01]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == WDIGEST [61ae01]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 159531 (26f2b)
+session_id 1
+username johndoe
+domainname DESKTOP-UBFFHS2
+logon_server DESKTOP-UBFFHS2
+logon_time 2024-10-17T22:16:35.148536+00:00
+sid S-1-5-21-996221637-1914836208-3740248221-1001
+luid 159531
+        == MSV ==
+                Username: johndoe
+                Domain: .
+                LM: NA
+                NT: bbf53d134077fc615eac56ccddb8b7b3
+                SHA1: 322dfdd498b4441e023bb01daa343bf820a06210
+                DPAPI: 322dfdd498b4441e023bb01daa343bf820a06210
+        == WDIGEST [26f2b]==
+                username johndoe
+                domainname DESKTOP-UBFFHS2
+                password None
+                password (hex)
+        == Kerberos ==
+                Username: johndoe
+                Domain: DESKTOP-UBFFHS2
+        == WDIGEST [26f2b]==
+                username johndoe
+                domainname DESKTOP-UBFFHS2
+                password None
+                password (hex)
+        == DPAPI [26f2b]==
+                luid 159531
+                key_guid 5e1cf641-2e86-47fc-907d-28ac2f4cd4f7
+                masterkey ad00384e00b30f6742497dabf10171d1c4cbe6f76510c01447d48584a8f5f59d9ff5932ad60a832464b1c5c7f771ddc984da30d02c86cf6eb9a6cde980fe73b1
+                sha1_masterkey ef7fed69da30d2efe90393df9dba4d399ae7d2fb
+
+== LogonSession ==
+authentication_id 159426 (26ec2)
+session_id 1
+username johndoe
+domainname DESKTOP-UBFFHS2
+logon_server DESKTOP-UBFFHS2
+logon_time 2024-10-17T22:16:35.148536+00:00
+sid S-1-5-21-996221637-1914836208-3740248221-1001
+luid 159426
+        == MSV ==
+                Username: johndoe
+                Domain: .
+                LM: NA
+                NT: bbf53d134077fc615eac56ccddb8b7b3
+                SHA1: 322dfdd498b4441e023bb01daa343bf820a06210
+                DPAPI: 322dfdd498b4441e023bb01daa343bf820a06210
+        == WDIGEST [26ec2]==
+                username johndoe
+                domainname DESKTOP-UBFFHS2
+                password None
+                password (hex)
+        == Kerberos ==
+                Username: johndoe
+                Domain: DESKTOP-UBFFHS2
+        == WDIGEST [26ec2]==
+                username johndoe
+                domainname DESKTOP-UBFFHS2
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 53218 (cfe2)
+session_id 1
+username DWM-1
+domainname Window Manager
+logon_server 
+logon_time 2024-10-17T22:16:33.762894+00:00
+sid S-1-5-90-0-1
+luid 53218
+        == WDIGEST [cfe2]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == WDIGEST [cfe2]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 53168 (cfb0)
+session_id 1
+username DWM-1
+domainname Window Manager
+logon_server 
+logon_time 2024-10-17T22:16:33.762894+00:00
+sid S-1-5-90-0-1
+luid 53168
+        == WDIGEST [cfb0]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == WDIGEST [cfb0]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 997 (3e5)
+session_id 0
+username LOCAL SERVICE
+domainname NT AUTHORITY
+logon_server 
+logon_time 2024-10-17T22:16:33.734552+00:00
+sid S-1-5-19
+luid 997
+        == Kerberos ==
+                Username: 
+                Domain: 
+
+== LogonSession ==
+authentication_id 996 (3e4)
+session_id 0
+username DESKTOP-UBFFHS2$
+domainname WORKGROUP
+logon_server 
+logon_time 2024-10-17T22:16:33.634965+00:00
+sid S-1-5-20
+luid 996
+        == WDIGEST [3e4]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == Kerberos ==
+                Username: desktop-ubffhs2$
+                Domain: WORKGROUP
+        == WDIGEST [3e4]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 29607 (73a7)
+session_id 1
+username UMFD-1
+domainname Font Driver Host
+logon_server 
+logon_time 2024-10-17T22:16:33.575557+00:00
+sid S-1-5-96-0-1
+luid 29607
+        == WDIGEST [73a7]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == WDIGEST [73a7]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 29579 (738b)
+session_id 0
+username UMFD-0
+domainname Font Driver Host
+logon_server 
+logon_time 2024-10-17T22:16:33.575557+00:00
+sid S-1-5-96-0-0
+luid 29579
+        == WDIGEST [738b]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == WDIGEST [738b]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+
+== LogonSession ==
+authentication_id 28230 (6e46)
+session_id 0
+username 
+domainname 
+logon_server 
+logon_time 2024-10-17T22:16:33.513548+00:00
+sid None
+luid 28230
+
+== LogonSession ==
+authentication_id 999 (3e7)
+session_id 0
+username DESKTOP-UBFFHS2$
+domainname WORKGROUP
+logon_server 
+logon_time 2024-10-17T22:16:33.482299+00:00
+sid S-1-5-18
+luid 999
+        == WDIGEST [3e7]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == Kerberos ==
+                Username: desktop-ubffhs2$
+                Domain: WORKGROUP
+        == WDIGEST [3e7]==
+                username DESKTOP-UBFFHS2$
+                domainname WORKGROUP
+                password None
+                password (hex)
+        == DPAPI [3e7]==
+                luid 999
+                key_guid 709ad544-8f29-497d-9d60-a07199df1ded
+                masterkey e7dc6345f977d41e46056d29d43077c4cfb2a8bf22693d58a85f72955874fc7a0d798444a4bf803def13773bab49b651c704d4f57fdfcf51547cbf91d85ffd10
+                sha1_masterkey 3aac470dfcd815e3e35b0706e9ec3584fdcaa966
+        == DPAPI [3e7]==
+                luid 999
+                key_guid ad2a948e-ff11-47f3-8a15-801d62d9fa1c
+                masterkey 1bcc5f2e31e2287c6ea4709a0d70e4777b34d885957bb8d5f4e0b6c79598d062e6c100edfb267244b8965f66def04c51405b4914d726741180af18f7d7645fa9
+                sha1_masterkey 9368d2b2bce6267014c9ac726a9914a743dfd2e8
+
+
+
