@@ -1,0 +1,5 @@
+Las funciones desarrolladas estan testeadas mediante el apartado Testing, el cual incluye un
+ejemplo del correcto funcionamiento de cada función realizada.
+
+Dicho apartado "Testing" se encuentra comentado dentro de cada funcion, para realizar la ejecución simplemente
+quitar las triple comillas ''' al principio y al final de la sección.

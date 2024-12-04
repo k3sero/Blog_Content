@@ -1,0 +1,3 @@
+# Librerias Requeridas (Deben instalarse para la funcion np y Matrix)
+numpy
+sympy

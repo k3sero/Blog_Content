@@ -1,0 +1,7 @@
+# Librerias necesarias para la ejecución de esta práctica.
+# pip install -r requirements.txt
+
+# Matplotlib solo es necesario para ex5.py
+matplotlib 
+numpy
+Pillow

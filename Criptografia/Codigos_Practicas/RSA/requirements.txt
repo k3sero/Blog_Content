@@ -1,0 +1,2 @@
+# pip install -r requirements.txt
+sympy # Para la funcion isprime
