@@ -1,25 +1,26 @@
-from PIL import Image
+from PIL import Image, ImageSequence
 import os
 
-# Aumentar el límite de píxeles permitido (si realmente confías en la imagen)
-Image.MAX_IMAGE_PIXELS = None  # Esto desactiva el límite completamente
+# Establecer un límite mayor de píxeles para permitir imágenes grandes
+Image.MAX_IMAGE_PIXELS = 9331200000  # Establece un nuevo límite de píxeles
 
-# Abrimos el archivo .gif
-gif_path = 'challenge.gif'  # Cambia este nombre por la ubicación de tu archivo .gif
+gif_path = 'challenge.gif'  # Cambia esto por la ruta de tu archivo GIF
 output_folder = 'images'
 
-# Creamos la carpeta de salida si no existe
+# Crear la carpeta si no existe
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
-# Abrimos la imagen .gif
-gif = Image.open(gif_path)
+try:
+    gif = Image.open(gif_path)
 
-# Iteramos a través de cada frame del gif y lo guardamos como una imagen separada
-frame_count = gif.n_frames
-for i in range(frame_count):
-    gif.seek(i)
-    frame = gif.copy()  # Copiar el frame actual
-    frame.save(os.path.join(output_folder, f'frame_{i}.png'))
+    # Redimensionar el GIF a un tamaño más pequeño
+    gif.thumbnail((1000, 1000))  # Redimensiona a 1000x1000 píxeles o cualquier tamaño adecuado
 
-print(f"Se extrajeron {frame_count} frames y se guardaron en la carpeta '{output_folder}'")
+    # Usamos ImageSequence para extraer los frames
+    for i, frame in enumerate(ImageSequence.Iterator(gif)):
+        frame.save(os.path.join(output_folder, f'frame_{i}.png'))
+
+    print(f"Se extrajeron {i+1} frames y se guardaron en la carpeta '{output_folder}'")
+except Exception as e:
+    print(f"Error al abrir o procesar el archivo: {e}")
