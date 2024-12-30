@@ -1,32 +1,25 @@
-rt numpy as np
+from PIL import Image
 import os
 
-# Ruta del GIF con watermark
-gif_path = "watermarked.gif"
-output_folder = "images/"
-output_masks_folder = "masks/"
-output_applied_folder = "applied_masks/"
+# Aumentar el límite de píxeles permitido (si realmente confías en la imagen)
+Image.MAX_IMAGE_PIXELS = None  # Esto desactiva el límite completamente
 
-# Crear carpetas para las imágenes procesadas
-os.makedirs(output_folder, exist_ok=True)
-os.makedirs(output_masks_folder, exist_ok=True)
-os.makedirs(output_applied_folder, exist_ok=True)
+# Abrimos el archivo .gif
+gif_path = 'challenge.gif'  # Cambia este nombre por la ubicación de tu archivo .gif
+output_folder = 'images'
 
-# Paso 1: Extraer los fotogramas del GIF
-frames = []  # Lista para almacenar los fotogramas como arrays
-with Image.open(gif_path) as gif:
-    frame_number = 0
-    while True:
-        # Guardar cada fotograma como PNG
-        frame_path = os.path.join(output_folder, f"frame_{frame_number:03d}.png")
-        gif.save(frame_path, "PNG")
-        print(f"Guardado: {frame_path}")
-        
-        # Convertir el fotograma a RGB (no a escala de grises)
-        frames.append(np.array(gif.convert("RGB")))  # Convertir a formato RGB
-        
-        frame_number += 1
-        try:
-            gif.seek(frame_number)  # Avanza al siguiente fotograma
-        except EOFError:
-            break  # Salir del bucle al final de la animación
+# Creamos la carpeta de salida si no existe
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
+
+# Abrimos la imagen .gif
+gif = Image.open(gif_path)
+
+# Iteramos a través de cada frame del gif y lo guardamos como una imagen separada
+frame_count = gif.n_frames
+for i in range(frame_count):
+    gif.seek(i)
+    frame = gif.copy()  # Copiar el frame actual
+    frame.save(os.path.join(output_folder, f'frame_{i}.png'))
+
+print(f"Se extrajeron {frame_count} frames y se guardaron en la carpeta '{output_folder}'")
