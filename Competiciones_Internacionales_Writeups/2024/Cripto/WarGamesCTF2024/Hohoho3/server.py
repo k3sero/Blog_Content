@@ -44,8 +44,6 @@ def main():
 			if option == 1:
 				name = str(input("Enter your name: "))
 
-				print(m)
-
 				if "Santa Claus" in name:
 					print("Cannot register as Santa!\n")
 					continue
