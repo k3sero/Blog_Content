@@ -47,9 +47,6 @@ def generateToken(name, m):
 
     return hex(crc ^ ((1 << 128) - 1))[2:]
 
-
-
-
 #name = "\x7f"
 
 name = str(input("Enter your name: "))
@@ -65,27 +62,4 @@ print(f"Este es el resultado final: {token}")
 token = int(hex_value, 16)
 
 token = token ^ ((1 << 128) - 1)
-print(token)
-
-
-
-(token >> 1)
-print(token)
-
-(token >> 1)
-print(token)
-
-(token >> 1)
-print(token)
-
-(token >> 1)
-print(token)
-
-(token >> 1)
-print(token)
-
-(token >> 1)
-print(token)
-
-(token >> 1)
 print(token)

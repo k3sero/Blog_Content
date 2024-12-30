@@ -47,9 +47,6 @@ def generateToken(name, m):
 
     return hex(crc ^ ((1 << 128) - 1))[2:]
 
-
-
-
 #name = "\x7f"
 
 name = str(input("Enter your name: "))
