@@ -1,6 +1,6 @@
 # 📂 Kesero — Repositorio de Retos y Writeups
 
-![logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo_mod.png)
+![logo](https://raw.githubusercontent.com/k3sero/k3sero.github.io/refs/heads/main/assets/img/Logo.png)
 
 Este repositorio contiene el contenido complementario del blog de [Kesero](https://k3sero.github.io), organizado por categorías temáticas y competiciones. Aquí encontrarás archivos utilizados o generados durante la resolución de retos CTFs.
 ## 📁 Estructura de carpetas
